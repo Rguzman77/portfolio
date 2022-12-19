@@ -1,0 +1,101 @@
+{
+  "content": {
+    "curriculum": {
+      "basics": {
+        "name": "",
+        "surname": "",
+        "label": "",
+        "location":"",
+        "email": "",
+        "phone": "",
+        "summary": "",
+        "profiles": [
+          {
+            "linkedin": "",
+            "github": ""
+          }
+        ]
+      },
+      "skills": [
+        {
+          "name": "",
+          "level": ""
+        },
+        {
+          "name": "",
+          "level": ""
+        },
+        {
+          "name": "",
+          "level": ""
+        },
+        {
+          "name": "",
+          "level": ""
+        }
+      ],
+      "languages": [
+        {
+          "name": "",
+          "level": ""
+        },
+        {
+          "name": "",
+          "level": ""
+        },
+        {
+          "name": "",
+          "level": ""
+        },
+        {
+          "name": "",
+          "level": ""
+        }
+      ],
+      "experience": [
+        {
+          "position": "",
+          "years": ""
+        },
+        {
+          "position": "",
+          "years": ""
+        },
+        {
+          "position": "",
+          "years": ""
+        },
+        {
+          "position": "",
+          "years": ""
+        }
+      ]
+  },
+    "prortfolio": [
+    {
+      "name": "1st project",
+      "description": "",
+      "url": "",
+      "languages": [],
+      "githubUrl": "",
+      "image": ""
+    },
+    {
+      "name": "2nd project",
+      "description": "",
+      "url": "",
+      "languages": [],
+      "githubUrl": "",
+      "image": ""
+    },
+    {
+      "name": "3th project",
+      "description": "",
+      "url": "",
+      "languages": [],
+      "githubUrl": "",
+      "image": ""
+    }
+  ]
+  }
+}
