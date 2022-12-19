@@ -9,4 +9,6 @@ app.use(router);
 
 // START SERVER
 const PORT = 3000
-const server = app.listen(PORT, () => console.log(`server running on port ${PORT}`))
+const server = app.listen(PORT, () => console.log(`server running on port ${PORT}`));
+
+//create MVC functions.
