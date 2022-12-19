@@ -7,9 +7,16 @@ export const personalData = {
         return content
     }
 }
-/*export const personalData = {
-    getAllData: ()=> {
-        return content
+export const projectData = {
+    getProjectsInfo: ()=> {
+        return content.portfolio
     }
 }
-*/
+
+
+export const projectById = {
+    getProjectById: (id:number)=> {
+        return content.portfolio[id]
+    }
+}
+
