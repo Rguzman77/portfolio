@@ -7,3 +7,9 @@ export const personalData = {
         return content
     }
 }
+/*export const personalData = {
+    getAllData: ()=> {
+        return content
+    }
+}
+*/
