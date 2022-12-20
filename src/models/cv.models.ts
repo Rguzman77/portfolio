@@ -3,27 +3,18 @@ import {Request, Response} from 'express'
 import {content} from './database.json'
 
 
-export const personalData = {
+export const model ={
+       
     getAllData: ()=> {
-        return content
-    }
-}
-
-export const projectData = {
+                return content
+            },
+          
     getProjectsInfo: ()=> {
-        return content.portfolio
-    }
-}
-
-export const projectById = {
+                return content.portfolio
+            },
+        
     getProjectById: (id:number)=> {
-        return content.portfolio[id]
-    }
-}
-
-export const eraseProject = {
-    deleteProjectById: (id:number)=> {
-        content.portfolio = content.portfolio.slice(id)
-        console.log(`Erased content nº ${id}`)
-    }
+                return content.portfolio[id]
+            
+     }
 }

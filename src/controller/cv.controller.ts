@@ -1,20 +1,18 @@
 import { Request, Response } from "express";
-import { personalData, projectData, projectById, eraseProject} from "../models/cv.models";
+import { model } from "../models/cv.models";
 
 export const cvCtrl={
     getProfile: (req:Request,res:Response)=>{
-        res.json(personalData.getAllData());
+        res.json(model.getAllData());
     },
     getProjects: (req:Request,res:Response)=>{
-        res.json(projectData.getProjectsInfo());
+        res.json(model.getProjectsInfo());
     },
     getProjectId: (req:Request,res:Response)=>{
         
-        res.json(projectById.getProjectById(parseInt(req.params.id)))
+        res.json(model.getProjectById(parseInt(req.params.id)))
     },
-    deleteProjectById: (req:Request,res:Response)=>{
-        
-        res.json(eraseProject.deleteProjectById(parseInt(req.params.id)))}
+   
 }
 
 
