@@ -1,11 +1,11 @@
 import { Router } from "express";
-import { cvCtrl } from "../controller/cv.controller";
+import { controller } from "../controller/cv.controller";
 const router = Router();
 
-router.get("/",cvCtrl.getProfile)
-router.get("/projects",cvCtrl.getProjects)
-router.get("/projects/:id",cvCtrl.getProjectId)
-router.delete("deleteprojects/:id",cvCtrl.deleteProjectById)
+router.get("/",controller.getProfile)
+router.get("/projects",controller.getProjects)
+router.get("/projects/:id",controller.getProjectId)
+
 
 
 export default router

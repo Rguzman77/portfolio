@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { model } from "../models/cv.models";
 
-export const cvCtrl={
+export const controller ={
     getProfile: (req:Request,res:Response)=>{
         res.json(model.getAllData());
     },
@@ -12,7 +12,6 @@ export const cvCtrl={
         
         res.json(model.getProjectById(parseInt(req.params.id)))
     },
-   
 }
 
 
