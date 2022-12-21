@@ -3,18 +3,18 @@ import {Request, Response} from 'express'
 import {content} from './database.json'
 
 
-export const model ={
-       
-    getAllData: ()=> {
+export const model = {
+
+    getAllData: () => {
                 return content
             },
-          
-    getProjectsInfo: ()=> {
+        
+    getProjectsInfo: () => {
                 return content.portfolio
             },
         
-    getProjectById: (id:number)=> {
+    getProjectById: (id:number) => {
                 return content.portfolio[id]
             
-     }
+    }
 }
