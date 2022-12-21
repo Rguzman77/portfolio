@@ -28,3 +28,6 @@ __________________|_________________________|_____________________|_____________
 Express framework has been used to develop this API using MVC architecture with Typescript.
 The port used to host the server is 3001. We developed at this route trying to avoid errors caused by other
 aplications using this port.
+
+
+Coders: Hel & Ema.
