@@ -11,8 +11,8 @@ router.get("/projects/:id",controller.getProjectId)
 
 router.post("/projects/:id", controller.postProject)
 
-router.delete("/projects/:id", controller.deleteSelectedProyect)
+router.put("/projects/:id", controller.putProjectName)
 
-router.patch("/projects/:id", controller.postProjectName)
+router.delete("/projects/:id", controller.deleteSelectedProyect)
 
 export default router

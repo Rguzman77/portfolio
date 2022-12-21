@@ -8,10 +8,10 @@ export type newProject = {
         languages: never[];
         githubUrl: string;
         image:string;
-      };
+    };
 export type newProjectName = {
             name:string;
-      };
+    };
 
 export const controller = {
 
@@ -26,23 +26,25 @@ export const controller = {
     getProjectId: (req:Request,res:Response) => {
         res.json(model.getProjectById(parseInt(req.params.id)))
     },
+
+    postProject: (req:Request, res:Response) => {
+        const projectToAdd:newProject = req.body;
+        model.addProject(projectToAdd);
+        res.json('project added');
+    },
+
+    putProjectName: (req:Request, res:Response) => {
+        const id = req.params.id.toString();
+        const projectName = req.body;
+        model.addProjectName(projectName, id);
+        res.send('project modified');
+    },
+
     deleteSelectedProyect: (req:Request,res:Response) => {
         const id= req.params.id.toString();
         model.deleteProject(id);
         res.send(`project ${id} deleted`);
     },
-
-    postProject: (req:Request, res:Response) => {
-        const proyectToAdd:newProject = req.body;
-        model.addProject(proyectToAdd);
-        res.json('project added');
-    },
-
-    postProjectName: (req:Request, res:Response) => {
-        const proyectName = req.body;
-        model.addProjectName(proyectName);
-        res.json('project modified');
-    }
 }
 
 

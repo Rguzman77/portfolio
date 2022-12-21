@@ -3,8 +3,6 @@ import {Request, Response} from 'express'
 import {content} from './database.json'
 import {newProject, newProjectName} from "../controller/cv.controller"
 
-
-
 export let proyectos = new Array<any>
 
 export const model = {
@@ -25,12 +23,16 @@ export const model = {
         content.portfolio.push(proyectToAdd)
         return proyectos;
     },
-    addProjectName: (proyectName:any) => {
-        content.portfolio.push(proyectName)
-        return proyectos;
+    addProjectName: (projectName:newProjectName, id:string) => {
+        const proyecto = proyectos[proyectos.findIndex((e) => e.name == id)];
+
+        if(projectName.name) {
+            proyecto.name = projectName.name.toString();
+        }
     },
     deleteProject: (id:string)=>{
         content.portfolio.splice(content.portfolio.findIndex((e)=>e.name== id),1)
         return proyectos;
     }
 }
+
